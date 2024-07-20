@@ -17,6 +17,6 @@ RUN set -eux;                                                                   
         dev-vcs/git;                                                                        \
                                                                                             \
     rm --recursive /var/db/repos/gentoo;                                                    \
-    eix-sync -a;                                                                            \
+    eix-sync -a;
 
 CMD ["/bin/bash"]
