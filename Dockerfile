@@ -16,6 +16,7 @@ RUN set -eux;                                                                   
     emerge --verbose --quiet --jobs $(nproc) --autounmask y --autounmask-continue y         \
         app-portage/eix                                                                     \
         dev-util/pkgcheck                                                                   \
+        app-portage/pycargoebuild                                                           \
         dev-vcs/git;                                                                        \
                                                                                             \
     sed -i '/FEATURES="${FEATURES} getbinpkg"/d' /etc/portage/make.conf;                    \
